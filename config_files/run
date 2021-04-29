@@ -1,0 +1,1 @@
+docker run --net=host -v /POTION2:/POTION2:z -it leomarie/potion2 bash:

@@ -1,0 +1,46 @@
+# comment lines are ignored;
+# end directory names with '/' charactere whenever possible
+# you can reference the potion_dir in the other parameters by writing "$potion_dir", when applicable (path to directories or files)
+
+-=-=-= BASIC PARAMETER FOR LOCATION AND FILE NAME =-=-=-
+
+potion_dir = /POTION2   # path to this program, you can reference it in the parameters below by writing "$potion_dir" when applicable (path to directories or files).
+-=-=-= PATH TO EXTERNAL PROGRAMS USED BY POTION =-=-=-
+
+# type the path of the executable of each program below
+
+
+codeml = /programs/paml/paml4.8/codeml                         # path to the Codeml executable of PAML package
+fastcodeml = /programs/fastcodeml/fast 		  # path to the FastCodeml executable
+traitrelax = /programs/traitrelax                   #path to the TRAITRELAX executable
+consense = /programs/phylip/phylip-3.697/exe/consense              # path to the Consense executable of Phylip package
+muscle = /programs/muscle/muscle3.8.31_i86linux64                  # path to the MUSCLE executable
+clustalo = /usr/local/bin/clustalo                       # path to the Clustal Omega executable
+phipack = /programs/phipack/PhiPack/Phi                            # path to the Phi executable of PhiPack
+prank = /programs/prank/prank/bin/prank                            # path to the Prank executable
+proml = /programs/phylip/phylip-3.697/exe/proml                    # path to the Proml executable of Phylip package
+dnaml = /programs/phylip/phylip-3.697/exe/dnaml                    # path to the Proml executable of Phylip package
+seqboot = /programs/phylip/phylip-3.697/exe/seqboot                # path to the Seqboot executable of Phylip package
+#trimal = /programs/trimal/trimAl/source/trimal                     # path to the Trimal executable
+trimal = /POTION2/trimal/source/trimal
+mafft = /usr/local/bin/mafft                      				 # path to the Mafft executable
+#pagan = /programs/pagan/pagan/bin/pagan                           # path to the Pagan executable
+phyml = /programs/phyml/phyml-master/src/phyml                     # path to the PhyML executable
+codonphyml = /programs/codonphy/codonPHYML_dev/src/codonphyml path to the CodonPhyML executable  # path to the CodonPhyML executable
+raxml = /programs/standard-RAxML/raxmlHPC  # path to the RAxML executable
+nw_rename = /usr/local/bin/nw_rename               # path to nw_rename in newick-utils
+nw_labels = /usr/local/bin/nw_labels               # path to nw_labels in newick-utils
+nw_prune = /usr/local/bin/nw_prune                 # path to nw_prune in newick-utils
+nw_clade = /usr/local/bin/nw_clade                 # path to nw_clade in newick-utils
+nw_reroot = /usr/local/bin/nw_reroot                 # path to nw_reroot in newick-utils
+
+
+
+-=-=-= PARAMETERS FOR INTERNAL USE =-=-=-
+
+result_table = final_results.out                  # file with the final result in tsv format (tab spaced values).
+result_uncertain = uncertain.out                  # file with the list of clusters where the null hypotesis can't be ignored by the positive evidence. Leave empty if you do not desire to produce this list
+result_positive = positive.out                    # file with the list of clusters with evidence of positive selection.
+summary = summary.out
+log_file = final_log.log                          # log file name
+log_path = /programs/log/                       # path where log file will be created
